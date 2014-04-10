@@ -1312,7 +1312,7 @@ var createLabelHtml = function(name, autoform, defs, hash) {
     return '<span' + objToAttributes(hash) + '>' + label + '</span>';
   } else {
     if (!('for' in hash)) {
-      hash.for = name;
+      hash['for'] = name;
     }
     return '<label' + objToAttributes(hash) + '>' + label + '</label>';
   }
