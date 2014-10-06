@@ -1,5 +1,7 @@
 var defaultFramework = "bootstrap3";
 
+console = console || { log: function(){}, warn: function(){} };
+
 AutoForm = function(schema) {
   var self = this;
   if (schema instanceof SimpleSchema) {
