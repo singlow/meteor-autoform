@@ -1033,9 +1033,9 @@ var createInputHtml = function(name, autoform, defs, hash) {
     type = hash.type;
   } else if (schemaType === String && (hash.rows || valHasLineBreaks)) {
     type = "textarea";
-  } else if (schemaType === String && defs.regEx === SchemaRegEx.Email) {
+  } else if (schemaType === String && defs.regEx === SimpleSchema.RegEx.Email) {
     type = "email";
-  } else if (schemaType === String && defs.regEx === SchemaRegEx.Url) {
+  } else if (schemaType === String && defs.regEx === SimpleSchema.RegEx.Url) {
     type = "url";
   } else if (schemaType === Number) {
     type = "number";
